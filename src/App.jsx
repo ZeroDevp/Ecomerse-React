@@ -1,13 +1,17 @@
 import React from 'react';
-import Test from '@components/test/Test';
+import MainLayout from '@components/Layout/Layout';
+import Header from '@components/Header/Header';
+import Footer from '@components/Footer/Footer';
 
 function App() {
     return (
-        <div>
-            <h1>
-                <Test /> Ecommerse
-            </h1>
-        </div>
+        <>
+            <MainLayout>
+                <Header />
+                Content
+                <Footer />
+            </MainLayout>
+        </>
     );
 }
 
